@@ -1,1 +1,1 @@
-![alt text](http://https://github.com/hasantunahan/addressbook/dark/to/Simulator Screen Shot - iPhone 12 - 2021-05-26 at 02.05.36.png.png)
+![alt text](https://github.com/hasantunahan/addressbook/blob/master/dark/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202021-05-26%20at%2002.05.36.png)
