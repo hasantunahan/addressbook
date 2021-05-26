@@ -1,0 +1,53 @@
+@BASE_URL = http://localhost:3000
+
+###
+GET {{BASE_URL}}/api/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFjYjVmY2E1MzNlMjBmNDRmZTkxYTUiLCJpYXQiOjE2MjE5MzE3NTIsImV4cCI6MTYyMTkzODk1Mn0.zc36lvHucIxsgPeGB6hHtTwNftuQJPSHlffQBBjS69o
+
+###
+GET {{BASE_URL}}/api/user/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFjYjVmY2E1MzNlMjBmNDRmZTkxYTUiLCJpYXQiOjE2MjE5MzE3NTIsImV4cCI6MTYyMTkzODk1Mn0.zc36lvHucIxsgPeGB6hHtTwNftuQJPSHlffQBBjS69o
+
+###
+DELETE {{BASE_URL}}/api/user/60852c4224e90a05c4ff6c43
+
+###
+DELETE {{BASE_URL}}/api/user/deleteAll
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg1MmI0YzFhMDcyZTE5MDg5NzRlM2EiLCJpYXQiOjE2MTkzNDA2MDEsImV4cCI6MTYxOTM0NzgwMX0.0SQOzS2y8lctTkYeGur_qMX4TPo-P6F3xZLFFwLilEY
+
+###
+PATCH {{BASE_URL}}/api/user/6083f9dc5e0b04125035d534
+Content-Type: application/json
+{
+    "password"  :"awfawf"
+}
+
+###
+POST {{BASE_URL}}/api/user
+Content-Type: application/json
+{
+    "name" : "mahmut",
+    "username" : "mahmut",
+    "email" : "mahmut@gmail.com",
+    "password" :"pes",
+    "longitude" : 39.950662864,
+    "latitude" : 32.825663364
+}
+
+###
+POST {{BASE_URL}}/api/user/login
+Content-Type: application/json
+{
+    "email" : "hasantun@gmail.com",
+    "password" :"pes"
+}
+
+###
+PATCH {{BASE_URL}}/api/user/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFjYjVmY2E1MzNlMjBmNDRmZTkxYTUiLCJpYXQiOjE2MjE5MzE1NDQsImV4cCI6MTYyMTkzODc0NH0.WOv5FO8IKFZ_WbjmzZcDbBaa7Kt0DOxDSKMWctnTgvo
+
+{
+    "name" : "tunahan"
+}
